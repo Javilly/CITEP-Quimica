@@ -7,6 +7,10 @@ using UnityEngine.UI;
 
 public class MenuManager : MonoBehaviour
 {
+    [Header("Managers")]
+    [SerializeField]
+    private InventoryManager inventoryManager;
+
     [Header("Render Cameras Logic")]
     [SerializeField]
     private Canvas mainCanvas;
@@ -24,6 +28,12 @@ public class MenuManager : MonoBehaviour
     [Header("Inventory")]
     [SerializeField]
     private GameObject inventoryUI;
+
+    [SerializeField]
+    private GameObject elementInfoUI;
+
+    [SerializeField]
+    private TMP_Text elementInfoText;
 
     [Header("Camera")]
     [SerializeField]
@@ -245,6 +255,16 @@ public class MenuManager : MonoBehaviour
         goToChallenge();
     }
 
+    public void previousChallengeStep()
+    {
+        challengeStep--;
+        if (challengeStep == 0)
+        {
+            Application.Quit();
+        }
+        goToChallenge();
+    }
+
     public void updateScoreText(string newText)
     {
         cameraScoreText.text = newText;
@@ -285,7 +305,7 @@ public class MenuManager : MonoBehaviour
     {
         if (isOk)
         {
-            questionFeedback.color = Color.green;
+            questionFeedback.color = new Color(0.1f, 0.8f, 0);
             continueButton.interactable = true;
         }
         else
@@ -311,7 +331,7 @@ public class MenuManager : MonoBehaviour
     {
         if (isOk)
         {
-            geometryFeedback.color = Color.green;
+            geometryFeedback.color = new Color(0.1f, 0.8f, 0);
             geometryContinueButton.interactable = true;
         }
         else
@@ -371,6 +391,23 @@ public class MenuManager : MonoBehaviour
         Destroy(moleculeToBuild);
         Destroy(moleculeModel);
         nextChallengeStep();
+        challengeScoreText.text = "";
+        cameraScoreText.text = "";
+
+        for (int i = 0; i < responseToggles.Length; i++)
+        {
+            responseToggles[i].isOn = false;
+        }
+
+        questionFeedback.text = "";
+        questionFeedback.color = Color.black;
+
+        for (int i = 0; i < elementToggles.Length; i++)
+        {
+            elementToggles[i].GetComponent<Toggle>().isOn = false;
+        }
+
+        geometryFeedback.text = "";
     }
 
     public void setTimer(float timer)
@@ -383,5 +420,21 @@ public class MenuManager : MonoBehaviour
     public void setPoints(int points)
     {
         pointsText.text = "" + points;
+    }
+
+    public void toggleElementInfo(string elementSlug)
+    {
+        if (!elementInfoUI.activeSelf)
+        {
+            elementInfoText.text = inventoryManager
+                .getElementBySlug(elementSlug)
+                .elementDescription;
+            ;
+            elementInfoUI.SetActive(true);
+        }
+        else if (elementInfoUI.activeSelf)
+        {
+            elementInfoUI.SetActive(false);
+        }
     }
 }
