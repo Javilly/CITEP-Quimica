@@ -262,6 +262,10 @@ public class MenuManager : MonoBehaviour
         {
             Application.Quit();
         }
+        if (challengeStep == 1)
+        {
+            restartGame();
+        }
         goToChallenge();
     }
 
