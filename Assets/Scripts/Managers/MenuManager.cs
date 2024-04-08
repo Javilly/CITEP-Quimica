@@ -412,6 +412,9 @@ public class MenuManager : MonoBehaviour
         }
 
         geometryFeedback.text = "";
+
+        moleculeModelCanvas.transform.rotation = Quaternion.identity;
+        moleculeModelCanvas.transform.localScale = Vector3.one;
     }
 
     public void setTimer(float timer)

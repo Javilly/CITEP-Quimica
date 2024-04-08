@@ -14,13 +14,14 @@ public class MoleculeRotation : MonoBehaviour
     [SerializeField]
     private Camera cam;
 
+    [SerializeField]
     private float originalSeparation = 0f;
-    private float actualSeparation = 0f;
-    private Vector2 firstTouchOriginalPos;
-    private Vector2 secondTouchOriginalPos;
 
     [SerializeField]
-    float scalationMultiplier = 0.1f;
+    private Vector3 initialScale;
+
+    private Vector3 min = new Vector3(0.8f, 0.8f, 0.8f);
+    private Vector3 max = new Vector3(2.5f, 2.5f, 2.5f);
 
     void Update()
     {
@@ -29,7 +30,7 @@ public class MoleculeRotation : MonoBehaviour
             Touch touch = Input.touches[0];
             Ray camRay = cam.ScreenPointToRay(touch.position);
             RaycastHit raycastHit;
-            if (Physics.Raycast(camRay, out raycastHit, 10))
+            if (Physics.Raycast(camRay, out raycastHit, 100))
             {
                 if (touch.phase == TouchPhase.Moved)
                 {
@@ -45,55 +46,38 @@ public class MoleculeRotation : MonoBehaviour
 
         if (Input.touches.Length == 2)
         {
-            Touch touchOne = Input.touches[0];
-            Touch touchTwo = Input.touches[1];
+            var touchZero = Input.GetTouch(0);
+            var touchOne = Input.GetTouch(1);
 
-            Ray camRayOne = cam.ScreenPointToRay(touchOne.position);
-            RaycastHit raycastHitOne;
-
-            if (Physics.Raycast(camRayOne, out raycastHitOne, 10))
+            if (
+                touchZero.phase == TouchPhase.Ended
+                || touchZero.phase == TouchPhase.Canceled
+                || touchOne.phase == TouchPhase.Ended
+                || touchOne.phase == TouchPhase.Canceled
+            )
             {
-                if (touchOne.phase == TouchPhase.Began)
-                {
-                    firstTouchOriginalPos = touchOne.position;
-                }
-                if (touchOne.phase == TouchPhase.Moved)
-                {
-                    if (originalSeparation > 0)
-                    {
-                        actualSeparation = Vector2.Distance(touchOne.position, touchTwo.position);
-                    }
-                }
+                return;
             }
 
-            Ray camRayTwo = cam.ScreenPointToRay(touchTwo.position);
-            RaycastHit raycastHitTwo;
-            if (Physics.Raycast(camRayTwo, out raycastHitTwo, 10))
+            if (touchZero.phase == TouchPhase.Began || touchOne.phase == TouchPhase.Began)
             {
-                if (touchTwo.phase == TouchPhase.Began)
-                {
-                    secondTouchOriginalPos = touchTwo.position;
-                }
-                if (touchTwo.phase == TouchPhase.Moved)
-                {
-                    if (originalSeparation > 0)
-                    {
-                        actualSeparation = Vector2.Distance(touchOne.position, touchTwo.position);
-                    }
-                }
+                originalSeparation = Vector2.Distance(touchZero.position, touchOne.position);
+                initialScale = transform.localScale;
             }
-
-            originalSeparation = Vector2.Distance(firstTouchOriginalPos, secondTouchOriginalPos);
-
-            if (originalSeparation != actualSeparation)
+            else
             {
-                float scaleMultiplier = actualSeparation / originalSeparation * scalationMultiplier;
+                var currentDistance = Vector2.Distance(touchZero.position, touchOne.position);
 
-                transform.localScale = new Vector3(
-                    transform.localScale.x * scaleMultiplier,
-                    transform.localScale.y * scaleMultiplier,
-                    transform.localScale.z * scaleMultiplier
-                );
+                if (Mathf.Approximately(originalSeparation, 0))
+                    return;
+
+                var factor = currentDistance / originalSeparation;
+
+                Vector3 newScale = new Vector3();
+                newScale.x = Mathf.Clamp(initialScale.x * factor, min.x, max.x);
+                newScale.y = Mathf.Clamp(initialScale.y * factor, min.y, max.y);
+                newScale.z = Mathf.Clamp(initialScale.z * factor, min.z, max.z);
+                transform.localScale = newScale;
             }
         }
     }

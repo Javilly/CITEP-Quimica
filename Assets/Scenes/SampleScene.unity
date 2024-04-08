@@ -1483,63 +1483,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 124219740}
   m_CullTransparentMesh: 1
---- !u!1001 &125304926
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 575224328}
-    m_Modifications:
-    - target: {fileID: 6256810219648557042, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_Name
-      value: 09_Vainillina
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 500
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: -180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 90
-      objectReference: {fileID: 0}
-    - target: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -90
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
 --- !u!1 &132022162
 GameObject:
   m_ObjectHideFlags: 0
@@ -1713,7 +1656,7 @@ Canvas:
   serializedVersion: 3
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
-  m_PlaneDistance: 10
+  m_PlaneDistance: 30
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
@@ -2587,6 +2530,13 @@ MonoBehaviour:
   PCRotationSpeed: 10
   MobileRotationSpeed: 0.4
   cam: {fileID: 519420031}
+  originalSeparation: 0
+  actualSeparation: 0
+  initialScale: {x: 0, y: 0, z: 0}
+  firstTouchOriginalPos: {x: 0, y: 0}
+  secondTouchOriginalPos: {x: 0, y: 0}
+  firstTouchActualPos: {x: 0, y: 0}
+  secondTouchActualPos: {x: 0, y: 0}
   scalationMultiplier: 1
 --- !u!65 &182670468
 BoxCollider:
@@ -5953,7 +5903,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &461315595
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7543,11 +7493,10 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 575224327}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -1001}
+  m_LocalPosition: {x: 0, y: 0, z: -8000}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 930637614}
+  m_Children: []
   m_Father: {fileID: 1723706173}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -7570,6 +7519,13 @@ MonoBehaviour:
   PCRotationSpeed: 10
   MobileRotationSpeed: 0.4
   cam: {fileID: 519420031}
+  originalSeparation: 0
+  actualSeparation: 0
+  initialScale: {x: 0, y: 0, z: 0}
+  firstTouchOriginalPos: {x: 0, y: 0}
+  secondTouchOriginalPos: {x: 0, y: 0}
+  firstTouchActualPos: {x: 0, y: 0}
+  secondTouchActualPos: {x: 0, y: 0}
   scalationMultiplier: 0.1
 --- !u!65 &575224330
 BoxCollider:
@@ -10930,11 +10886,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 930100468}
   m_CullTransparentMesh: 1
---- !u!4 &930637614 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6746241686883517768, guid: 2dfce6bd79bb04640a15dcc47decac08, type: 3}
-  m_PrefabInstance: {fileID: 125304926}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &939651168
 GameObject:
   m_ObjectHideFlags: 0
@@ -12030,7 +11981,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1067204451
 RectTransform:
   m_ObjectHideFlags: 0
