@@ -64,10 +64,10 @@ public class ChallengeManager : MonoBehaviour
     {
         challenges = new Challenge[10];
         challenges[0] = new Challenge(
-            "El amoníaco constituye una fuente de nitrógeno para muchos procesos químicos. En particular, se investiga su uso para capturar CO2, un gas de efecto invernadero. En este desafío el reto es construir una molécula de amoníaco.",
+            "El amoníaco constituye una fuente de nitrógeno para muchos procesos químicos. En particular, se investiga su uso para capturar CO<sub>2</sub>, un gas de efecto invernadero. En este desafío el reto es construir una molécula de amoníaco.",
             1,
-            "Amoníaco",
-            "NH3",
+            "Amoníaco (NH<sub>3</sub>)",
+            "NH<sub>3</sub>",
             new Element[2] { inventoryManager.inventory[4], inventoryManager.inventory[5] },
             "¿Cuál es la geometría electrónica que presenta la molécula de amoníaco?",
             "Tetraédrica",
@@ -98,8 +98,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[1] = new Challenge(
             "El agua resulta esencial para la vida en la Tierra, y también actúa como gas de efecto invernadero ante el calentamiento global. En este desafío te proponemos construir una molécula de agua.",
             1,
-            "Agua",
-            "H2O",
+            "Agua (H<sub>2</sub>O)",
+            "H<sub>2</sub>O",
             new Element[2] { inventoryManager.inventory[5], inventoryManager.inventory[3] },
             "Sabiendo que la geometría electrónica de una molécula de agua es tetraédrica, ¿qué ángulo de enlace HÔH esperarías?",
             "109,5°",
@@ -130,18 +130,18 @@ public class ChallengeManager : MonoBehaviour
         challenges[2] = new Challenge(
             "El dióxido de carbono es un gas de efecto invernadero cuya concentración en la atmósfera terrestre se ha incrementado por combustión de derivados del petróleo. En este desafío te proponemos construir esta molécula triatómica.",
             1,
-            "Dióxido de carbono",
-            "CO2",
+            "Dióxido de carbono (CO<sub>2</sub>)",
+            "CO<sub>2</sub>",
             new Element[2] { inventoryManager.inventory[0], inventoryManager.inventory[3] },
-            "Basándote en la geometría molecular del CO2, ¿qué podrías decir acerca de la polaridad de sus enlaces y la polaridad de la molécula?",
-            "El enlace C=O es polar y la molécula CO2 es polar.",
-            "El enlace C=O es no polar y la molécula CO2 no polar.",
-            "El enlace C=O es polar y la molécula CO2 es no polar.",
+            "Basándote en la geometría molecular del CO<sub>2</sub> , ¿qué podrías decir acerca de la polaridad de sus enlaces y la polaridad de la molécula?",
+            "El enlace C=O es polar y la molécula CO₂ es polar.",
+            "El enlace C=O es no polar y la molécula CO₂ no polar.",
+            "El enlace C=O es polar y la molécula CO₂ es no polar.",
             3,
             new string[3]
             {
-                "¡Intentá de nuevo! Si bien cada enlace C=O es polar, la molécula de CO2 tiene geometría molecular lineal y es simétrica. Esto hace que los momentos dipolares de cada enlace se cancelan y el momento dipolar total sea nulo. Por lo tanto, la molécula es no polar.",
-                "¡Intentá de nuevo! Si bien la molécula de CO2 es no polar, cada uno de los enlaces C=O son polares.",
+                "¡Intentá de nuevo! Si bien cada enlace C=O es polar, la molécula de CO<sub>2</sub> tiene geometría molecular lineal y es simétrica. Esto hace que los momentos dipolares de cada enlace se cancelan y el momento dipolar total sea nulo. Por lo tanto, la molécula es no polar.",
+                "¡Intentá de nuevo! Si bien la molécula de CO<sub>2</sub> es no polar, cada uno de los enlaces C=O son polares.",
                 "Respuesta correcta. ¡Muy bien!"
             },
             moleculeGeometrySprites[6],
@@ -162,19 +162,19 @@ public class ChallengeManager : MonoBehaviour
         challenges[3] = new Challenge(
             "El trióxido de azufre es un gas nocivo producido por la quema de derivados del petróleo azufrados, y es responsable de la lluvia ácida. En este desafío el reto es construir esta molécula tetraatómica.",
             1,
-            "Trióxido de azufre",
-            "SO3",
+            "Trióxido de azufre (SO<sub>3</sub>)",
+            "SO<sub>3</sub>",
             new Element[2] { inventoryManager.inventory[1], inventoryManager.inventory[3] },
-            "¿Cuáles son las fuerzas intermoleculares que esperarías encontrar en una molécula de SO3?",
+            "¿Cuáles son las fuerzas intermoleculares que esperarías encontrar en una molécula de SO<sub>3</sub>?",
             "London y dipolo-dipolo",
             "London",
             "Dipolo-dipolo",
             2,
             new string[3]
             {
-                "¡Intentá de nuevo! Si bien las fuerzas de London están presentes (como en toda molécula), la geometría molecular del SO3 es plana trigonal, los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo.",
+                "¡Intentá de nuevo! Si bien las fuerzas de London están presentes (como en toda molécula), la geometría molecular del SO₃ es plana trigonal, los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo.",
                 "Respuesta correcta. ¡Muy bien!",
-                "¡Intentá de nuevo! Observá que la geometría molecular del SO3 es plana trigonal, de manera que los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo."
+                "¡Intentá de nuevo! Observá que la geometría molecular del SO<sub>3</sub> es plana trigonal, de manera que los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo."
             },
             moleculeGeometrySprites[0],
             moleculeGeometrySprites[8],
@@ -194,23 +194,23 @@ public class ChallengeManager : MonoBehaviour
         challenges[4] = new Challenge(
             "Los CFC o clorofuorocarburos son gases muy nocivos que se han empleado como refrigerantes y propelentes, y son destructores de la capa de ozono. En este desafío el reto es construir una molécula de triclorofluorometano.",
             2,
-            "Triclorofluorometano",
-            "CCl3F",
+            "Triclorofluorometano (CCl<sub>3</sub>F)",
+            "CCl<sub>3</sub>F",
             new Element[3]
             {
                 inventoryManager.inventory[0],
                 inventoryManager.inventory[6],
                 inventoryManager.inventory[2]
             },
-            "El CCl3F tiene un punto de ebullición mayor al CH4 si bien ambas moléculas son tetraédricas. ¿Qué opción elegirías para describir esta diferencia?",
-            "La molécula CCl3F forma enlaces de H, mientras que CH4 es incapaz de hacerlo.",
-            "Al ser polares ambas moléculas, el momento dipolar en CCl3F es mayor al momento dipolar en CH4.",
-            "CCl3F presenta interacciones de London y dipolo-dipolo, mientras que CH4 sólo presenta fuerzas de London de menor intensidad.",
+            "El CCl<sub>3</sub>F tiene un punto de ebullición mayor al CH<sub>4</sub> si bien ambas moléculas son tetraédricas. ¿Qué opción elegirías para describir esta diferencia?",
+            "La molécula CCl₃F forma enlaces de H, mientras que CH₄ es incapaz de hacerlo.",
+            "Al ser polares ambas moléculas, el momento dipolar en CCl₃F es mayor al momento dipolar en CH₄.",
+            "CCl₃F presenta interacciones de London y dipolo-dipolo, mientras que CH₄ sólo presenta fuerzas de London de menor intensidad.",
             3,
             new string[3]
             {
                 "¡Intentá de nuevo! Recordá que los enlaces de hidrógeno intermoleculares sólo tienen lugar cuando existe H unido a los elementos N, O ó F. En este caso, no se encuentran en ninguna de las dos.",
-                "¡Intentá de nuevo! Observá que la molécula CCl3F es polar, mientras que CH4 no lo es. Además, las interacciones de London en CCl3F son más intensas respecto a CH4.",
+                "¡Intentá de nuevo! Observá que la molécula CCl<sub>3</sub>F es polar, mientras que CH<sub>4</sub> no lo es. Además, las interacciones de London en CCl<sub>3</sub>F son más intensas respecto a CH4.",
                 "Respuesta correcta. ¡Muy bien!"
             },
             moleculeGeometrySprites[10],
@@ -231,8 +231,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[5] = new Challenge(
             "El llamado bioetanol es un biocombustible que puede obtenerse por fermentación de biomasa. Su uso como fuente alternativa a los combustibles fósiles presenta ventajas y desventajas. En este desafío deberás construir una molécula de etanol.",
             2,
-            "Etanol",
-            "C2H6O",
+            "Etanol (C<sub>2</sub>H<sub>6</sub>O)",
+            "C<sub>2</sub>H<sub>6</sub>O",
             new Element[3]
             {
                 inventoryManager.inventory[0],
@@ -268,8 +268,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[6] = new Challenge(
             "El isopreno o 2-metil-1,3-butadieno es un hidrocarburo nocivo para el medio ambiente y es empleado en la fabricación de polímeros similares al caucho natural. En este desafío deberás construir una molécula de isopreno.",
             2,
-            "metil-1,3-butadieno",
-            "C5H8",
+            "metil-1,3-butadieno (C<sub>5</sub>H<sub>8</sub>)",
+            "C<sub>5</sub>H<sub>8</sub>",
             new Element[2] { inventoryManager.inventory[0], inventoryManager.inventory[5] },
             "¿Cuáles de estas opciones describen a la molécula de isopreno?",
             "Pertenece a la familia de los alquenos y tiene el mismo número de átomos de hidrógeno que el 2-metilbutano.",
@@ -300,8 +300,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[7] = new Challenge(
             "Los ftalatos como el DMP o benceno-1,2-dicarboxilato de dimetilo se emplean como plastificantes y son grandes contaminantes de aguas, afectando especies marinas y, potencialmente, la humana. En este desafío, el reto es construir una molécula de DMP.",
             3,
-            "Benceno-1,2-dicarboxilato de dimetilo",
-            "C10H10O4",
+            "Benceno-1,2-dicarboxilato de dimetilo (C<sub>10</sub>H<sub>10</sub>O<sub>4</sub>)",
+            "C<sub>10</sub>H<sub>10</sub>O<sub>4</sub>",
             new Element[3]
             {
                 inventoryManager.inventory[0],
@@ -337,8 +337,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[8] = new Challenge(
             "La vainillina o 4-hidroxi-3-metoxibenzaldehído es un compuesto natural producido por algunas plantas cuya versión sintética, fabricada a partir de un derivado petroquímico o de la industria papelera, es empleada en cosmética y alimentos. En este desafío el reto es construir una molécula de vainillina.",
             3,
-            "hidroxi-3-metoxibenzaldehido",
-            "C8H8O3",
+            "hidroxi-3-metoxibenzaldehido (C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>)",
+            "C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>",
             new Element[3]
             {
                 inventoryManager.inventory[0],
@@ -374,8 +374,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[9] = new Challenge(
             "La asparagina es un aminoácido importante en la fotosíntesis. En este desafío, el reto es construir una molécula de asparagina. Presenta una cadena saturada de 4 átomos de carbono con un grupo ácido carboxílico en posición 1, un grupo amino en posición 2, y un grupo amida en posición 4.",
             3,
-            "Asparagina",
-            "C4H8N2O3",
+            "Asparagina (C₄H₈N₂O₃)",
+            "C₄H₈N₂O₃",
             new Element[4]
             {
                 inventoryManager.inventory[0],
