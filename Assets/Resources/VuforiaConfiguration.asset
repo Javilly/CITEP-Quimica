@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: 
-    ufoLicenseKey: QWV3UjRFci8vLy8vQUFBQUtBKzc0c2ZCUVVZb25reTlPb3pOL2lKN3Q5ZUVZak9sYVphSFZXZWpzdVVBUjNBV0s3TkNIb1NQdnZweThwbnhQeS9qK1VleXFqMnpYYlREcGRtZ0dLN2VncEdaeFRGSnpqV21ONVBJT1V2dmNyc3NicHZSczRKdTVLbk9QckZsMEVacTdBL056R1JYUDBxVC9DVVlKVGpJTHAxUWRiNWJJUHRJczNXVUlyb3dRUFJnU25lVSt1a2lCN0JxbGhGa1VlTEZvTVJGQ3NHdVFtN0l1VXBtLzFCV043MDM4U0ZNaVRSc0dzOGw3VWdlblp6KzhKLzFEU2JlZ3lLYllHcGdqL3k4ZmZWK1hBUmUyZmRIOTFLV25GWlplNEFsL3BrdnB4L2xZM3QxOEg2TUhVRWQzZmxlMWxta25XbzkrUHRTZkdYK09iSUpjcmMwa091QmgvQzRTS3lqbmJXck8zd0QrYm5OM0JlVXpCZlc=
+    vuforiaLicenseKey: AThYLaX/////AAABmTg5u8DuJUk0ubnOcFit3HVZ8pNL6g6B1DsfmfE0FcsIF6cgHgyQr8BwaebUcsryhl17ZwCLRaCjUSFlkoBJvAB9cmHKVYOzGyhOVQhzt/HJHCChCmilzaCACsrhzqLa8HGg6vEB/E9ivAwE2oCQzdAXjYzl54+ESZQQk8Ha6I9NxpxsQtMunA2ddAKKn7FGmR7ceidWZxoTHwMxDlhsUHoSYD8kRmOTKV3p6i45rtKHQfnUBajAoMHxRw0js7f2PUZeG8oQZbIhLjTR9wLcLAANeDjitg9VtmB6VV0vMOQoJK0p0ZrwIJq4yIE4zDgzcBRTeE68jzY8D7JrfpDLok931XXWnRnk/OAo509YSQV8
+    ufoLicenseKey: QVhiM0Y1Ly8vLy8vQUFBQUtPbnFIeHJFSGs1N3VrMlg4U050eVBzK2pkOFZxMDhrazlwYjBsYS9aZUIxQlV1ckZWcWt0ZllSQWpnT2tIRlY2VzdOMDRTRjNYRUhmbTF5L1BnYlB4eWdHWEF6RUNheXowc3dyNVNYa2ozdERuRjhka1FpOHRscHdkMDcrcEJEY1FjTjNJcUM1bEgwOTYzQkdZdjRsQStRb0hSQU9nRGthelp5TlY0WHVwWU9EaE05NWw5bXAzbnBDMjM5MWZBWXBFdEdiL2loTDNab3N4b25ZblhjK1JtSS9wLzRoTDIwVGhmTXR6WFJNYkpUTXZLZzJoQ0N0TEJXNEptZ0pSOUtSdStzQWM3QjVNOWFFMGVHQ1dUT1VRSUUweEpiZC9ZL2cvS29iNDhBRXdQOGFwbWR5NmRWU0FHU2psVzRZY2FEU2Zud3J1ZHhucVNmSUZiajNTUnIzM0lKVlFIaW1rL0oyOGNFeDdyekcySXg=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -23,8 +23,8 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 10.0.2
-    eulaAcceptedVersions: '{"Values":["","10.17","10.18","0.0","10.22"]}'
+    version: 10.22.5
+    eulaAcceptedVersions: '{"Values":["10.17","10.18","0.0","10.22"]}'
   database:
     disableModelExtraction: 0
   shaders:
