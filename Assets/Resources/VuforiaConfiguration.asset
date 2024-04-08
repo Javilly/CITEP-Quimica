@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VuforiaConfiguration
   m_EditorClassIdentifier: 
   vuforia:
-    vuforiaLicenseKey: AThYLaX/////AAABmTg5u8DuJUk0ubnOcFit3HVZ8pNL6g6B1DsfmfE0FcsIF6cgHgyQr8BwaebUcsryhl17ZwCLRaCjUSFlkoBJvAB9cmHKVYOzGyhOVQhzt/HJHCChCmilzaCACsrhzqLa8HGg6vEB/E9ivAwE2oCQzdAXjYzl54+ESZQQk8Ha6I9NxpxsQtMunA2ddAKKn7FGmR7ceidWZxoTHwMxDlhsUHoSYD8kRmOTKV3p6i45rtKHQfnUBajAoMHxRw0js7f2PUZeG8oQZbIhLjTR9wLcLAANeDjitg9VtmB6VV0vMOQoJK0p0ZrwIJq4yIE4zDgzcBRTeE68jzY8D7JrfpDLok931XXWnRnk/OAo509YSQV8
-    ufoLicenseKey: QWNVZWx1bi8vLy8vQUFBQUtER1Y2dHJpNmt0RmdkbHRIR3Z0S2txTXNPdjVjV3h2ZzBJT1h2UVQrK0lmZUZWZTB5UVFYVldZY3FtM0pYYTdpakxMSGF3U1U3UTdqV25XMVJKVlg0dGVRL0l0WFlhQzZBRTRkT2p1MXRRQTQ0T2liN2k2MlhjS0xneFdmQmJKSFdzRXZFZFlaSmNCYlJFV1UvbHV5TW1JM1JKTW5EV3FRZUloRHRoMVZxNW5YMTB4UmNCY3ZLNENJcURGZFYyekkwUmk2L0NDb2FtT0pxbjllUzdhbEliWEhGbnNZNXpHTVpyWjZVZ0kyL2EweUJEUHlVU290czZWeTdhWWhiUE5YdmJ6YlkvWnBmMEQ2QWVhWnh1UG8vOFZJRjB1VzlMbzByMHFycXRCNFZrZVMrdzdac0RXblNqMEcrcytqdmljbzdMbDFNWWtzRjEraFFlQ3dnaTQxeE5XdkN2cFhsRzlMMDBUNTA5d1ByNUw=
+    vuforiaLicenseKey: 
+    ufoLicenseKey: QWV3UjRFci8vLy8vQUFBQUtBKzc0c2ZCUVVZb25reTlPb3pOL2lKN3Q5ZUVZak9sYVphSFZXZWpzdVVBUjNBV0s3TkNIb1NQdnZweThwbnhQeS9qK1VleXFqMnpYYlREcGRtZ0dLN2VncEdaeFRGSnpqV21ONVBJT1V2dmNyc3NicHZSczRKdTVLbk9QckZsMEVacTdBL056R1JYUDBxVC9DVVlKVGpJTHAxUWRiNWJJUHRJczNXVUlyb3dRUFJnU25lVSt1a2lCN0JxbGhGa1VlTEZvTVJGQ3NHdVFtN0l1VXBtLzFCV043MDM4U0ZNaVRSc0dzOGw3VWdlblp6KzhKLzFEU2JlZ3lLYllHcGdqL3k4ZmZWK1hBUmUyZmRIOTFLV25GWlplNEFsL3BrdnB4L2xZM3QxOEg2TUhVRWQzZmxlMWxta25XbzkrUHRTZkdYK09iSUpjcmMwa091QmgvQzRTS3lqbmJXck8zd0QrYm5OM0JlVXpCZlc=
     delayedInitialization: 0
     cameraFocusModeSetting: 2
     cameraDeviceModeSetting: -1
@@ -23,17 +23,21 @@ MonoBehaviour:
     modelTargetRecoWhileExtendedTracked: 1
     shareRecordingsInITunes: 0
     logLevel: 0
-    version: 10.17.4
-    eulaAcceptedVersions: '{"Values":["10.17"]}'
+    version: 10.0.2
+    eulaAcceptedVersions: '{"Values":["","10.17","10.18","0.0","10.22"]}'
   database:
     disableModelExtraction: 0
   shaders:
     depthMaskShader: {fileID: 4800000, guid: 9894afa5f3a5e4bbca625981beb1b20e, type: 3}
     outlineShader: {fileID: 4800000, guid: 88d3b6b5cf364476ca39fcec255331b1, type: 3}
-    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000, type: 0}
+    unlitTransparentShader: {fileID: 10750, guid: 0000000000000000f000000000000000,
+      type: 0}
+  runtimeResources:
+    register: {fileID: 11400000, guid: caeba6ecda451416c803389918ddea4a, type: 2}
   videoBackground:
     numDivisions: 2
-    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded, type: 3}
+    videoBackgroundShader: {fileID: 4800000, guid: 144dfca22ac584ade9e538e24a5ddded,
+      type: 3}
     unlitShader: {fileID: 10752, guid: 0000000000000000f000000000000000, type: 0}
     videoBackgroundEnabled: 1
   deviceTracker:
