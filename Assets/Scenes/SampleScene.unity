@@ -1076,7 +1076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.75294125, g: 0.7960785, b: 0.854902, a: 1}
+  m_Color: {r: 0.1254902, g: 0.14509805, b: 0.32941177, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1375,8 +1375,8 @@ RectTransform:
   - {fileID: 1988301863}
   m_Father: {fileID: 863404115}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.3, y: 0.1}
-  m_AnchorMax: {x: 0.7, y: 0.16}
+  m_AnchorMin: {x: 0.3, y: 0.15}
+  m_AnchorMax: {x: 0.7, y: 0.21}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1798,7 +1798,7 @@ Canvas:
   m_RenderMode: 1
   m_Camera: {fileID: 519420031}
   m_PlaneDistance: 30
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -2354,7 +2354,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 984, y: -78.00006}
+  m_AnchoredPosition: {x: 984, y: -78}
   m_SizeDelta: {x: 1968, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153912297
@@ -4769,11 +4769,11 @@ MonoBehaviour:
   - {fileID: 6780248088579343386, guid: 67652a586a2b641178597e34ef7f8c3c, type: 3}
   elementsLeftToPlace: 0
   moleculeModels:
-  - {fileID: 7473843613236099065, guid: 1313fa61b83d743b69d63b60b1790b64, type: 3}
-  - {fileID: 748106627211818082, guid: c2a0cd5ebf1114529a457f3412453d92, type: 3}
-  - {fileID: 1740632360832095140, guid: 34f2b443df4e945f4bfa7eb6173c9951, type: 3}
-  - {fileID: 82011223631193748, guid: 2021f36fbe6be4bf1b22f4ea56bd2dfe, type: 3}
-  - {fileID: 4065604385411651369, guid: b377c65647c604787b7eafb1905f1703, type: 3}
+  - {fileID: 919132149155446097, guid: a5208797a52c0417d85ddb83eadf671e, type: 3}
+  - {fileID: 919132149155446097, guid: 25925057e9cc74aaf8f8c4a6fe974154, type: 3}
+  - {fileID: 919132149155446097, guid: ebabc31f9062044ebbd1bf2271e1362c, type: 3}
+  - {fileID: 919132149155446097, guid: d69f41116a2b74e5e85856db1d6d4aa1, type: 3}
+  - {fileID: 919132149155446097, guid: 4704e678a2fb140338f6308f6c825aa0, type: 3}
   - {fileID: 1775507687316472300, guid: d973759f17d8040c8864f0c751332f1d, type: 3}
   - {fileID: 3088545861626250787, guid: d21f57f292d3249c2a44a504c4f8d6f3, type: 3}
   - {fileID: 5290006991588995805, guid: a19f08a2869c64820a8bd2a4daa551f1, type: 3}
@@ -9555,8 +9555,8 @@ MonoBehaviour:
   mDataSetPath: Vuforia/quimica-ra.xml
   mAspectRatio: 1.24624
   mImageTargetType: 0
-  mWidth: 0.2
-  mHeight: 0.24924801
+  mWidth: 0.19999999
+  mHeight: 0.24924798
   mRuntimeTexture: {fileID: 0}
   mMotionHint: 1
   mTrackingOptimization: 0
@@ -13648,7 +13648,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4286081370
-  m_fontColor: {r: 0.3529412, g: 0.41176474, b: 0.47058827, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -20546,7 +20546,7 @@ MonoBehaviour:
   m_fontColor32:
     serializedVersion: 2
     rgba: 4286081370
-  m_fontColor: {r: 0.3529412, g: 0.41176474, b: 0.47058827, a: 1}
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

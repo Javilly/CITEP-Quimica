@@ -374,8 +374,8 @@ public class ChallengeManager : MonoBehaviour
         challenges[9] = new Challenge(
             "La asparagina es un aminoácido importante en la fotosíntesis. En este desafío, el reto es construir una molécula de asparagina. Presenta una cadena saturada de 4 átomos de carbono con un grupo ácido carboxílico en posición 1, un grupo amino en posición 2, y un grupo amida en posición 4.",
             3,
-            "Asparagina (C₄H₈N₂O₃)",
-            "C₄H₈N₂O₃",
+            "Asparagina (C<sub>4</sub>H<sub>8</sub>N<sub>2</sub>O<sub>3</sub>)",
+            "C<sub>4</sub>H<sub>8</sub>N<sub>2</sub>O<sub>3</sub>",
             new Element[4]
             {
                 inventoryManager.inventory[0],
