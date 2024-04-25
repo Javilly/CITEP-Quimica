@@ -172,7 +172,7 @@ public class ChallengeManager : MonoBehaviour
             2,
             new string[3]
             {
-                "¡Intentá de nuevo! Si bien las fuerzas de London están presentes (como en toda molécula), la geometría molecular del SO₃ es plana trigonal, los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo.",
+                "¡Intentá de nuevo! Si bien las fuerzas de London están presentes (como en toda molécula), la geometría molecular del SO<sub>3</sub> es plana trigonal, los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo.",
                 "Respuesta correcta. ¡Muy bien!",
                 "¡Intentá de nuevo! Observá que la geometría molecular del SO<sub>3</sub> es plana trigonal, de manera que los momentos dipolares de cada enlace se cancelan entre sí, haciendo que la molécula sea no polar. Una molécula no polar no presenta interacciones dipolo-dipolo."
             },
@@ -268,7 +268,7 @@ public class ChallengeManager : MonoBehaviour
         challenges[6] = new Challenge(
             "El isopreno o 2-metil-1,3-butadieno es un hidrocarburo nocivo para el medio ambiente y es empleado en la fabricación de polímeros similares al caucho natural. En este desafío deberás construir una molécula de isopreno.",
             2,
-            "metil-1,3-butadieno (C<sub>5</sub>H<sub>8</sub>)",
+            "2-metil-1,3-butadieno (C<sub>5</sub>H<sub>8</sub>)",
             "C<sub>5</sub>H<sub>8</sub>",
             new Element[2] { inventoryManager.inventory[0], inventoryManager.inventory[5] },
             "¿Cuáles de estas opciones describen a la molécula de isopreno?",
@@ -337,7 +337,7 @@ public class ChallengeManager : MonoBehaviour
         challenges[8] = new Challenge(
             "La vainillina o 4-hidroxi-3-metoxibenzaldehído es un compuesto natural producido por algunas plantas cuya versión sintética, fabricada a partir de un derivado petroquímico o de la industria papelera, es empleada en cosmética y alimentos. En este desafío el reto es construir una molécula de vainillina.",
             3,
-            "hidroxi-3-metoxibenzaldehido (C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>)",
+            "4-hidroxi-3-metoxibenzaldehido (C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>)",
             "C<sub>8</sub>H<sub>8</sub>O<sub>3</sub>",
             new Element[3]
             {
