@@ -16330,6 +16330,20 @@ MonoBehaviour:
   fluorSprite: {fileID: 21300000, guid: 56ac540e8a4f746969f4ecb130250da5, type: 3}
   cloroSprite: {fileID: 21300000, guid: 7c8f5c7f50d764bf3b05c8b57d2c46db, type: 3}
   azufreSprite: {fileID: 21300000, guid: cd9cf7d7c40ad45068f13c04d26363cd, type: 3}
+  hidrogenoBuildingSprite: {fileID: 21300000, guid: 2f2deea757c004e81a464b86b2be7810,
+    type: 3}
+  carbonoBuildingSprite: {fileID: 21300000, guid: 8d9f23a18f3774f40af0d4ef29e669a1,
+    type: 3}
+  nitrogenoBuildingSprite: {fileID: 21300000, guid: 0ed3e111d3cd440ffa52dccec79febac,
+    type: 3}
+  oxigenoBuildingSprite: {fileID: 21300000, guid: c25148be59024419dad25a0a05c50823,
+    type: 3}
+  fluorBuildingSprite: {fileID: 21300000, guid: cccfbbc98991a4a328e7a010c5a70489,
+    type: 3}
+  cloroBuildingSprite: {fileID: 21300000, guid: 7494f1b1808ea4c3b9e54e4d0105d8de,
+    type: 3}
+  azufreBuildingSprite: {fileID: 21300000, guid: f923a50ce08624a6594fc39a68f681ef,
+    type: 3}
 --- !u!4 &1451113301
 Transform:
   m_ObjectHideFlags: 0

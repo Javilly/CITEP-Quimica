@@ -165,7 +165,7 @@ public class ChallengeManager : MonoBehaviour
             "Trióxido de azufre (SO<sub>3</sub>)",
             "SO<sub>3</sub>",
             new Element[2] { inventoryManager.inventory[1], inventoryManager.inventory[3] },
-            "¿Cuáles son las fuerzas intermoleculares que esperarías encontrar en una molécula de SO<sub>3</sub>?",
+            "¿Cuáles son las fuerzas intermoleculares que esperarías encontrar entre moléculas de SO<sub>3</sub>?",
             "London y dipolo-dipolo",
             "London",
             "Dipolo-dipolo",
@@ -434,7 +434,7 @@ public class ChallengeManager : MonoBehaviour
             eventManager.disableButton(buttonGO.gameObject.name);
             Sprite elementSprite = inventoryManager
                 .getElementBySymbol(buttonGO.gameObject.tag)
-                .sprite;
+                .builingSprite;
             menuManager.placeElement(buttonGO, elementSprite);
             elementsLeftToPlace--;
 

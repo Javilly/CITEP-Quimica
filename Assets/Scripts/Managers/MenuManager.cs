@@ -357,7 +357,7 @@ public class MenuManager : MonoBehaviour
             elementToggles[i].SetActive(true);
             elementToggles[i].transform.Find("Background").GetComponent<Image>().sprite = elements[
                 i
-            ].sprite;
+            ].builingSprite;
         }
     }
 
